@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>VISTA 2</title>
+</head>
+<body>
+	Vista 2
+	<table border="1">
+		<thead>
+			<tr>
+				<td>NOMBRE</td>
+				<td>TELEFONO</td>
+			</tr>
+		</thead>
+		<!-- FOR EACH , persona: VARIABLE, P: LA LISTA-->
+		<tbody th:each=" persona:${p}">
+			<th th:text="${persona.nombre}"></th>
+			<th th:text="${persona.telefono}"></th>
+		</tbody>
+	</table>
+</body>
+</html>
